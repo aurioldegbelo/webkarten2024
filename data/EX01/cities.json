@@ -13,18 +13,17 @@
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties":  {"cityname": "Moscow", "country": "Russia",  "population": 13149803},
         "geometry": {
           "coordinates": [
-            95.91315946032756,
-            47.26252154537522
+            55.755833, 37.617222	
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "London", "country": "United Kingdom",  "population": 8926568 },
         "geometry": {
           "coordinates": [
             76.96489819369691,
@@ -35,77 +34,71 @@
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Saint Petersburg", "country": "Russia",  "population": 5597763},
         "geometry": {
           "coordinates": [
-            41.15593098854342,
-            50.944602934199565
+            59.9375, 30.308611
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Berlin", "country": "Germany",  "population": 3755251},
         "geometry": {
           "coordinates": [
-            98.14345645294549,
-            60.602709786772294
+            52.52, 13.405
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Madrid", "country": "Spain",  "population": 3332035},
         "geometry": {
           "coordinates": [
-            24.269265357056497,
-            24.864306523911125
+            40.416944, -3.703333
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Kiev", "country": "Ukraine",  "population": 2952301},
         "geometry": {
           "coordinates": [
-            52.93261052353387,
-            33.37515036071886
+            50.45, 30.523333	
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Rome", "country": "Italy",  "population": 2755309},
         "geometry": {
           "coordinates": [
-            95.06797107931749,
-            31.781398136746773
+            41.893333, 12.482778
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Baku", "country": "Azerbaijan",  "population": 2336600},
         "geometry": {
           "coordinates": [
-            138.0387755554442,
-            62.64033568592086
+            40.395278, 49.882222	
+
           ],
           "type": "Point"
         }
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"cityname": "Paris", "country": "France",  "population": 0},
         "geometry": {
           "coordinates": [
-            135.8780585705981,
-            49.27512201517649
+            48.856667, 2.352222
           ],
           "type": "Point"
         }
