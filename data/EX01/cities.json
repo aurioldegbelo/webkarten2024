@@ -95,7 +95,7 @@
       },
       {
         "type": "Feature",
-        "properties": {"cityname": "Paris", "country": "France",  "population": 0},
+        "properties": {"cityname": "Paris", "country": "France",  "population": 2102650},
         "geometry": {
           "coordinates": [
             48.856667, 2.352222
