@@ -1,8 +1,11 @@
 "use strict";
 
+// http://www.w3schools.com/TAGS/ref_eventattributes.asp 
 
 let element = document.getElementById("testparagraph")
 
+/*
+
 element.onclick = function()
 {
     alert ("I have been clicked upon")
@@ -22,3 +25,4 @@ element.addEventListener("click", function()
 {
     alert ("Second event handler")
 })
+*/
