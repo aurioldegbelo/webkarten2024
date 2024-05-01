@@ -1,4 +1,4 @@
 "use strict"; 
 
 
-alert("Hello")
+alert("This is a message")
