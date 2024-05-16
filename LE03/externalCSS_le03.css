@@ -1,36 +1,54 @@
+.center {
+    text-align: center;
+    color: rgb(0, 0, 255); 
+  }
+
+.large{
+    font-size: 80px;
+}
+
+/*
+
+  p.center {
+    text-align: center;
+    color: rgb(30, 0, 255);
+    text-decoration: underline;
+  }
+
+*/
+
+  h1, p {
+    text-align: center;
+    color: red;
+  }
+
  /*
-p {
+
+ #para1 {
+    text-align: right;
+    color: red;
+  }
+ 
+  p {
     text-align: center;
     color: rgb(255, 106, 0);
   }
 
-  #para1 {
-    text-align: right;
-    color: red;
-  }
-
-  .center {
-    text-align: center;
-    font-size: 60px;
-  }
-
-
-
-  p.center {
-    text-align: center;
-    color: red;
-    text-decoration: underline;
-  }
-
-
-  * {
+   * {
     text-align: center;
     color: blue;
   }
 
+
+ 
+
+
+
+
+
+
+
+
    
-  h1, h2, p {
-    text-align: center;
-    color: red;
-  }
+
   */
