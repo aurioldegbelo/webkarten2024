@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <a href="second_page.html?cities=dresden">go to second page</a>-->
+    <!-- Simple example to illustrate the passing of data/information from one webpage to another. 
+    
+    Adapted from https://medium.com/@cyberbotmachines/how-to-pass-value-from-one-html-page-to-another-using-javascript-3c9ab62df4d
+    -->
+    
+    <script> 
+        const myObject = { hello: 'world' };
+        const myObjectString = JSON.stringify(myObject);
+        localStorage.setItem('objectGreeting', myObjectString);    
+    </script>
+
+</body>
+</html>
