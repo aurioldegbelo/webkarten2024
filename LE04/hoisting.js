@@ -20,7 +20,7 @@ var efg = function ()
 }
 efg()
 
-//hij()
+hij()
 var hij = function ()
 {
    console.log("hij")
