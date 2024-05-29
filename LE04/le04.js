@@ -29,7 +29,7 @@ map.on('click', function(e)
     alert(e.latlng);
 })
 
-
+/*
 // Leaflet Draw: https://mapss.shh.mpg.de/static/packages/leaflet-draw/docs/leaflet-draw-0.4.2.html
 
 // FeatureGroup is to store editable layers
@@ -65,7 +65,7 @@ map.on('draw:deleted', function (event)
 })
 
 
-
+/*
 // routing example
 L.Routing.control({
     waypoints: [
@@ -73,4 +73,5 @@ L.Routing.control({
       L.latLng(51.040278, 13.731389) // HBF
     ]
   }).addTo(map);
+  */
 
