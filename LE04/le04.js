@@ -4,7 +4,7 @@
 
 /*
 var map = L.map('my_map', {
-    center: [52.52, 13.405],
+    center: [51.05, 13.75],
     zoom: 13
 });
 */
@@ -12,6 +12,9 @@ var map = L.map('my_map').setView([51.05, 13.75], 13);
 
 // markers
 //L.marker([51.04, 13.7589]).addTo(map);
+
+var marker = L.marker([51.04, 13.7589])
+marker.addTo(map);
 
 // tiles
 var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -29,9 +32,11 @@ map.on('click', function(e)
     alert(e.latlng);
 })
 
-/*
-// Leaflet Draw: https://mapss.shh.mpg.de/static/packages/leaflet-draw/docs/leaflet-draw-0.4.2.html
 
+
+
+// Leaflet Draw: https://mapss.shh.mpg.de/static/packages/leaflet-draw/docs/leaflet-draw-0.4.2.html
+/*
 // FeatureGroup is to store editable layers
 var drawnItems = new L.FeatureGroup()
 map.addLayer(drawnItems)
@@ -39,7 +44,7 @@ var drawControl = new L.Control.Draw({
     edit: {
         featureGroup: drawnItems
     },
-    draw: false
+    //draw: false
 });
 map.addControl(drawControl);
 
@@ -64,8 +69,8 @@ map.on('draw:deleted', function (event)
 
 })
 
-
-/*
+*/
+ /* 
 // routing example
 L.Routing.control({
     waypoints: [
@@ -73,5 +78,5 @@ L.Routing.control({
       L.latLng(51.040278, 13.731389) // HBF
     ]
   }).addTo(map);
-  */
+*/
 
