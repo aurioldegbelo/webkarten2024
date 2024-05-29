@@ -8,10 +8,11 @@ var map = L.map('my_map', {
     zoom: 13
 });
 */
-var map = L.map('my_map').setView([51.05, 13.76], 13);
+//var map = L.map('my_map').setView([51.05, 13.76], 13);
+var map = L.map('my_map').setView([51.05, 13.75], 13);
 
 // markers
-L.marker([51.04, 13.7589]).addTo(map);
+//L.marker([51.04, 13.7589]).addTo(map);
 
 // tiles
 var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
