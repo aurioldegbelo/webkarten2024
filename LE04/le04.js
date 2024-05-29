@@ -8,7 +8,6 @@ var map = L.map('my_map', {
     zoom: 13
 });
 */
-//var map = L.map('my_map').setView([51.05, 13.76], 13);
 var map = L.map('my_map').setView([51.05, 13.75], 13);
 
 // markers
