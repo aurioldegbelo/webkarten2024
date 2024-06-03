@@ -1,11 +1,11 @@
 "use strict"
 
 abc()
-
 function abc() 
 {
     console.log("abc")
 }
+
 
 function cde()
 {
@@ -20,7 +20,7 @@ var efg = function ()
 }
 efg()
 
-hij()
+//hij()
 var hij = function ()
 {
    console.log("hij")
@@ -34,3 +34,9 @@ console.log(x)
 var y
 y = 7
 console.log(y)
+
+u = 6
+//let u
+//console.log(u)
+
+v = 9
