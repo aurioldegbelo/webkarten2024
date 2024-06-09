@@ -1,0 +1,10 @@
+      {
+        "type": "Feature",
+        "properties":  {"cityname": "Moscow", "country": "Russia",  "population": 13149803},
+        "geometry": {
+          "coordinates":  
+            37.617222, 55.755833	
+          ],
+          "type": "Point"
+        }
+      }
