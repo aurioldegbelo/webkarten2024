@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Auriol Degbelo">
+    <title>Illustration of an asynchronous task</title>
+</head>
+<body>
+    
+  <div id="demo"> Example Text </div>
+
+  <script>
+
+        console.log("start")
+        setTimeout(myFunction, 5000);
+        console.log("end")
+
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Example Text Modified !";
+        }
+
+  </script>
+
+</body>
+</html>

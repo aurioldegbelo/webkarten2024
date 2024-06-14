@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Auriol Degbelo">
+    <title>Demos for Lecture 04 - Leaflet and Open Weather Map API </title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Leaflet Draw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+    <!-- Leaflet Routing Machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <link rel="stylesheet" href="le04.css">
+    <script src="le04.js" defer></script>
+
+</head>
+
+<body>
+    <h1>This is an example of website</h1>
+       <div id="my_map"></div>
+
+   <!--
+    <div id="my_map" style="height: 400px;"></div>
+
+    <script>
+
+        async function geoCode(city_name) {
+            console.log("Geocoding started")
+            const apiKey = '73c2ab70e974c13a080c5133cc544990';
+            const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city_name},DE&limit=5&appid=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl)
+                const data = await response.json()
+                console.log(data)
+                const lat = data[0].lat
+                const lon = data[0].lon
+                const name = data[0].name
+                //  console.log(`Place: ${name}, Latitude: ${lat}; Longitude: ${lon}`)
+                return { "place": name, "latitude": lat, "longitude": lon }
+
+            } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+
+        async function fetchTemperatureInformation(city_name) {
+            let city_coordinates = await geoCode(city_name)
+            // console.log(city_coordinates)
+            let lat = city_coordinates.latitude
+            let lon = city_coordinates.longitude
+
+            const apiKey = '73c2ab70e974c13a080c5133cc544990'
+            // const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dresden&appid=${apiKey}`
+
+            // https://openweathermap.org/current#data
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+
+            try {
+                const response = await fetch(apiUrl)
+                const data = await response.json()
+                console.log("///", data)
+                const temperature = data.main.temp
+                const description = data.weather[0].description
+                const location = data.name
+                console.log(`Temperature in ${location}: ${temperature}°C; Weather: ${description}`)
+            } catch (error) {
+                console.error('Error fetching data:', error)
+            }
+        }
+        fetchTemperatureInformation("Dresden")
+
+    </script>
+
+    <script>
+
+        "use strict";
+
+        // Leaflet Core: https://leafletjs.com/examples.html
+
+        var map = L.map('my_map', {
+            center: [51.05, 13.75],
+            zoom: 13
+        });
+
+        var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+
+        //var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        var osmUrl = 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
+
+        var osmLayer = L.tileLayer(osmUrl, { maxZoom: 18, attribution: osmAttrib })
+        osmLayer.addTo(map)
+
+
+
+        L.marker([51.04, 13.7589]).addTo(map).bindPopup("this is a popup").openPopup();
+
+
+        // event listener (leaflet core)
+        map.on('click', function (e) {
+            //alert(e.latlng);
+
+        })
+
+
+        // FeatureGroup is to store editable layers
+        var drawnItems = new L.FeatureGroup();
+        map.addLayer(drawnItems);
+
+        var drawControl = new L.Control.Draw({
+            edit: {
+                featureGroup: drawnItems
+            },
+            //draw: false
+        });
+
+        map.addControl(drawControl);
+
+
+        // event listener (leaflet draw)
+        map.on('draw:created', function (event) {
+
+            console.log("Creation event", event)
+
+        })
+
+        map.on('draw:edited', function (event) {
+
+            console.log("Edit event", event)
+
+        })
+
+        map.on('draw:deleted', function (event) {
+
+            console.log("Delete event", event)
+
+        })
+
+    </script>
+    -->
+</body>
+
+</html>
