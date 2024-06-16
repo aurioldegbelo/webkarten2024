@@ -9,5 +9,4 @@ http.createServer((req, res) =>{
 }).listen(port, host)
 
 
-
 console.log(`Server is running on ${host}:${port}`)
