@@ -3,6 +3,8 @@ const path = require('path')
 const app = express()
 const port = 4000
 
+
+
 var map_route = require('./routes_2/map')
 var chart_route = require('./routes_2/chart')
 var impressum_route = require('./routes_2/impressum')
@@ -19,9 +21,6 @@ app.get('/', (req, res) => {
   console.log(html_home_file)
   res.sendFile(html_home_file)
 })
-
-
-
 
 
 

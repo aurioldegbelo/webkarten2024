@@ -27,13 +27,14 @@ var overlayMap = {"Cities": displayMarkers}
 var layerControl = L.control.layers(baseMaps, overlayMap).addTo(map)
 
 /*
+
 add_data_to_map()
 
 
 async function add_data_to_map()
 {
     
-    const dataUrl = "http://localhost:3000/data"
+    const dataUrl = "http://localhost:4000/data"
 
     try {
         const response = await fetch(dataUrl)
