@@ -26,6 +26,7 @@ var overlayMap = {"Cities": displayMarkers}
 
 var layerControl = L.control.layers(baseMaps, overlayMap).addTo(map)
 
+/*
 add_data_to_map()
 
 
@@ -45,3 +46,5 @@ async function add_data_to_map()
         console.error('Error fetching data:', error)
     }
 }
+
+*/
