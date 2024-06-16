@@ -26,26 +26,12 @@ var overlayMap = {"Cities": displayMarkers}
 
 var layerControl = L.control.layers(baseMaps, overlayMap).addTo(map)
 
-
-
-add_data_to_map()
-
-
-async function add_data_to_map()
+function add_data_to_map(data)
 {
-    
-    const dataUrl = "http://localhost:4000/data"
+    //var data = {}
+    console.log("///", data)
+    L.geoJSON(data).addTo(displayMarkers);
 
-    try {
-        const response = await fetch(dataUrl)
-        const data = await response.json()
-        console.log("///", data)
-        L.geoJSON(data).addTo(displayMarkers);
-
-
-    } catch (error) {
-        console.error('Error fetching data:', error)
-    }
 }
 
-/**/
+add_data_to_map(cities)
