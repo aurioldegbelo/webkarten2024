@@ -1,0 +1,21 @@
+{
+  "name": "my_first_server",
+  "version": "1.0.0",
+  "description": "This is an example - 15.06",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "server",
+    "node",
+    "dresden"
+  ],
+  "author": "AUriol Degbelo",
+  "license": "MIT",
+    "dependencies": {
+      "@turf/turf": "^7.0.0"
+    }
+  
+}
